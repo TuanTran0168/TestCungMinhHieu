@@ -10,6 +10,7 @@ def load_categories():
 
 
 def load_products(cate_id=None, tuan=None):
+
     query = Product.query
 
     if cate_id:
@@ -97,4 +98,4 @@ if __name__ == '__main__':
         print(count_product_by_cate())
         print(get_user_by_id(1))
         print(get_user_by_id(2))
-		print(get_user_by_id(3))
+	    print(get_user_by_id(3))

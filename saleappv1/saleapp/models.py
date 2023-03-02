@@ -9,6 +9,7 @@ from datetime import datetime
 class UserRole(UserEnum):
     USER = 1
     ADMIN = 2
+    QTV = 3
 
 
 class BaseModel(db.Model):
@@ -96,6 +97,7 @@ if __name__ == '__main__':
         c1 = Category(name='Điện thoại')
         c2 = Category(name='Máy tính bảng')
         c3 = Category(name='Phụ kiện')
+        c4 = Category(name='Laptop')
 
         db.session.add_all([c1, c2, c3])
         db.session.commit()

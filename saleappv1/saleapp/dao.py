@@ -9,14 +9,14 @@ def load_categories():
     return Category.query.all()
 
 
-def load_products(cate_id=None, kw=None):
+def load_products(cate_id=None, hieu=None):
     query = Product.query
 
     if cate_id:
         query = query.filter(Product.category_id.__eq__(cate_id))
 
     if kw:
-        query = query.filter(Product.name.contains(kw))
+        query = query.filter(Product.name.contains(hieu))
 
     return query.all()
 
@@ -97,4 +97,4 @@ if __name__ == '__main__':
         print(count_product_by_cate())
         print(get_user_by_id(1))
         print(get_user_by_id(2))
-		print(get_user_by_id(3))
+	    print(get_user_by_id(3))

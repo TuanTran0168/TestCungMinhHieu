@@ -12,7 +12,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:%s@localhost/it01s
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['CART_KEY'] = 'cart'
 
-cloudinary.config(cloud_name='dhwuwy0to', api_key='569153767496484', api_secret='ghXq0iY8RhWbqBcJaide7W-34RY')
+cloudinary.config(
+  cloud_name = "dyfzuigha",
+  api_key = "845545783724776",
+  api_secret = "qpXCeoAFOiuT0F_M0sY01YeO91s"
+)
 
 db = SQLAlchemy(app=app)
 
